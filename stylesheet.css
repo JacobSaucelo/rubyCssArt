@@ -1,0 +1,147 @@
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif; */
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+body h1 {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.frame {
+  height: 300px;
+  width: 300px;
+}
+
+.ruby {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: size 2s alternate infinite;
+}
+
+.top {
+  height: 14%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topDiv {
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+.top1 {
+  border-style: solid;
+  border-width: 0 22px 42px 32px;
+  border-color: transparent transparent #9e0707 transparent;
+  margin-right: 140px;
+  z-index: 3;
+}
+.top2 {
+  height: 42px;
+  width: 65px;
+  background: #af1c1c;
+  margin-right: 65px;
+  z-index: 2;
+}
+.top3 {
+  border-style: solid;
+  border-width: 0 42px 42px 42px;
+  border-color: transparent transparent #9e0707 transparent;
+  z-index: 3;
+}
+.top4 {
+  height: 42px;
+  width: 65px;
+  margin-left: 65px;
+  background-color: #f76767;
+  z-index: 2;
+  /* animation: flash 3s ease infinite; */
+}
+.top5 {
+  border-style: solid;
+  border-width: 0 32px 42px 22px;
+  border-color: transparent transparent #9e0707 transparent;
+  margin-left: 140px;
+  z-index: 3;
+}
+
+.bottom {
+  height: 0%;
+  width: 100%;
+  background-color: red;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.bottom div {
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+.bottom1 {
+  border-style: solid;
+  border-width: 84px 0px 0 96px;
+  border-color: #890505 transparent transparent transparent;
+  z-index: 1;
+  margin-right: 32%;
+}
+.bottom2 {
+  border-style: solid;
+  border-width: 84px 42px 0 42px;
+  border-color: #a51012 transparent;
+  z-index: 3;
+}
+.bottom3 {
+  border-style: solid;
+  border-width: 84px 96px 0px 0px;
+  border-color: #cb1718 transparent transparent transparent;
+  z-index: 1;
+  margin-left: 32%;
+}
+
+@keyframes size {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.textsInfo {
+  padding: 1rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.textsInfo p {
+  text-align: center;
+}
+
+.textsInfo h1 {
+  color: #f0db4f;
+}
